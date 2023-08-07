@@ -5,9 +5,13 @@
  <img src="Lab2.png" width="500" height="500">
 
 ### Q1: Choose all employees who have received an award (Nested Query)?
-Query:
+Query: 
+'''
+SQL 
+select  * from employee where employee.id in (select awards.employee_id from awards); 
+'''
 
-Output:
+Output: <img   src='Q1.jpg'>
  
 
 ### Q2: Choose all employees who have never received an award (Nested Query)?
